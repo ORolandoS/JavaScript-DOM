@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Practica de Java Script</title>
+  </head>
+  <body class="axlayapl">
+    <h1 class="axtitleline">Pregunta 1</h1>
+    <form action="" class="pregunta">
+      <h2>Promedio de 3 Notas</h2>
+      <div class="entrada">
+        <div id="divnombre" class="numero1">
+          <label for="">Nombre completo</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+        <div id="divcorreo" class="numero2">
+          <label for="">Correo</label>
+          <input type="text" name="correo" id="correo">
+        </div>
+      </div>
+      <div class="entrada">
+        <div id="divnota1" class="numero1">
+          <label for="">Nota 1</label>
+          <input type="number" name="" id="nota1" value="0" min="0" max="100"/>
+        </div>
+        <div class="numero2">
+          <label for="">Nota 2</label>
+          <input type="number" name="" id="nota2" value="0" min="0" max="100"/>
+        </div>
+        <div class="numero3">
+          <label for="">Nota 3</label>
+          <input type="number" name="" id="nota3" value="0" min="0" max="100"/>
+        </div>
+      </div>
+
+      <fieldset>
+        <div class="numero1">
+          <label for="">Resultado</label>
+          <input type="text" name="" id="promedio"/>
+        </div>
+      </fieldset>
+      <div id="botones" class="botones">
+        <button class="limpiar" type="submit">Limpiar</button>
+        <!-- <button class="ejecutar" type="submit">Ejecutar</button> -->
+        <input id="ejecutar" class="ejecutar" type="button" value="Ejecutar"></input>
+      </div>
+    </form>
+      <script src="js/script.js"></script>
+  </body>
+</html>

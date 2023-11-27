@@ -1,0 +1,57 @@
+:root {
+  --colpri: #08447c;
+  --colsec: rgb(243, 243, 243);
+  --colter: black;
+  --colwar: red;
+  --colok: green;
+  --colblk: #9be4f1;
+  --colfoc: #92f392;
+  --tex: "arial";
+}
+
+.pregunta {
+  width: 80%;
+  margin: 10px auto;
+  border: 3px solid var(--colter);
+  padding: 5px 15px;
+}
+.entrada {
+  display: flex;
+  border: 2px solid var(--colpri);
+  padding: 5px 15px;
+  margin: 5px;
+}
+
+.numero1,
+.numero2,
+.numero3{
+  width: 100%;
+  margin: 2px 10px;
+}
+
+.numero1 input {
+  display: block;
+  width: 90%;
+  padding: 2px 15px;
+}
+.numero2 input {
+  display: block;
+  width: 90%;
+  padding: 2px 15px;
+}
+.numero3 input {
+  display: block;
+  width: 90%;
+  padding: 2px 15px;
+}
+
+fieldset {
+  border: 2px solid var(--colpri);
+}
+
+.limpiar,
+.ejecutar {
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px;
+}
