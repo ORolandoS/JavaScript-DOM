@@ -1,5 +1,8 @@
-let ExpNombre = new RegExp("[a-zA-Z]");
+// EXPRECION REGULAR PARA EL NOMBRE
+let ExpNombre = new RegExp("[a-zA-Z]"); 
+// EXPRESION REGULAR MARA LA NOTA
 let ExpNota = new RegExp("[0-9]");
+// EXPRESION REGULAR PARA EL CORREO
 let rexExpCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/;
 let ejecutar = document.querySelector(".ejecutar");
 ejecutar.addEventListener("click", (e) => {
