@@ -1,4 +1,5 @@
 let ExpNombre = new RegExp("[a-zA-Z]");
+let ExpNota = new RegExp("[0-9]");
 let rexExpCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/;
 let ejecutar = document.querySelector(".ejecutar");
 ejecutar.addEventListener("click", (e) => {
@@ -26,6 +27,20 @@ ejecutar.addEventListener("click", (e) => {
       break;
     case rexExpCorreo.test(correo.value) == false:
       mensaje("divcorreo", "EL CORREO NO ES VALIDO.");
+      estado = false;
+      break;
+    default:
+      break;
+  }
+  // INICIO DE VALIDACION DE LA NOTA 1
+  let nota1 = document.getElementById("nota1");
+  switch (true) {
+    case nota1.value == "0":
+      mensaje("divnota1", "LA NOTA NO PUEDE SER CERO.");
+      estado = false;
+      break;
+    case ExpNota.test(nota1.value) == false:
+      mensaje("divnota1", "LA NOTA NO PUEDE SER LETRAS.");
       estado = false;
       break;
     default:
